@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account</title>
+    <link rel="stylesheet" href="accountManagement.css">
+    <link rel="icon" href="/Picture-Software-Licenses/SecureLicense-minilogo.PNG">
+    <link rel="stylesheet" type="text/css" href="Common_Styles.css">
+    <script src="toolbar.js"></script>
+    
+</head>
+<body>
+
+    <!--Toolbar Menu-->
+    <div class="container">
+        <div class="sidebar">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu </button>
+            <ul>
+                <li><a href="mainPage.html">Home</a></li>
+                <li><a href="accountManagement.html">My Account</a></li>
+                <li><a href="myLicenses.html">My Licenses</a></li>
+                <li><a href="renewLicense.html">License Renewal</a></li>
+                <li><a href="endSubscription.html">End a Subscription</a></li>
+                <li><a href="deleteAccount.html">Delete Account</a> </li>
+                <li><a href="/Login-SignUp/landingPage.html">Log Out</a> </li>
+            </ul>
+        </div>
+    <!--Toolbar Menu--> 
+
+
+        <div class="content">
+            <header>
+                <img src="/Picture-Software-Licenses/SecureLicense-logo.PNG" class="logo">
+            </header>
+            <div class="home-div">
+                <p><pre class="home">Home   /   Software Licences </pre></p>
+                
+                <p class="licenses-p"> My Account:</p>
+            </div>
+        
+                    <h2>My account</h2>
+            <br>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName">
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+
+                    <label for="birthday">Birthday</label>
+                    <input type="date" id="birthday" name="birthday">
+                </fieldset>
+
+                <br/>
+
+                <fieldset>
+                        <legend>Contact information</legend>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="phoneNum">Phone Number</label>
+                        <input type="text" id="phoneNum" name="phoneNum">
+
+                        <label for="preferredCommunication">Preferred Communication Type</label>
+                        <select id="preferredCommunication">
+                            <option value="email">Email</option>
+                            <option value="sms">SMS</option>
+                            <option value="email_sms">Email & SMS</option>
+                        </select>
+                        
+                        <input type="checkbox" id="promoations" name="promotions">
+                        <label for="promoations">Keep me updated with Informational/Promotional emails</label>
+                </fieldset>
+
+                <br/>
+
+                <fieldset>
+                    <legend>Address</legend>
+                    <label for="addressLine">Address</label>
+                    <input type="text" id="addressLine" name="addressLine">
+
+                    <label for="aptNum">Apartment, suite, etc.</label>
+                    <input type="text" id="aptNum" name="aptNum">
+
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+
+                    <label for="state">State/Province</label>
+                    <input type="text" id="state" name="state">
+
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country">
+
+                    <label for="zip">ZIP/Postal Code</label>
+                    <input type="text" id="zip" name="zip">
+                </fieldset>
+
+                <br/>
+
+                <div>
+                    <input type="submit" onclick="window.location.href = 'mainPage.html'" value="SAVE">
+                    <input type="button" onclick="window.location.href = 'mainPage.html'" value="CANCEL">
+                </div>
+            </form>
+                   
+        </div>
+    </div>
+</body>
+</html>

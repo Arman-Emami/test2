@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 0px;  
+}
+
+header {
+    background-color: rgb(49, 161, 198);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.home-div {
+    background-image: url(/Picture-Software-Licenses/pngtree-high-tech-background-image_265852.jpg);
+    height: 170px;
+    margin-top: 0;
+}
+
+.home {
+    padding-left: 100px;
+    color: #d4cdcd;
+    padding-top: 50px;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.licenses-p {
+    padding-left: 100px;
+    font-size: 25pt;
+    color:black;
+    font-weight: bolder;
+}
+
+
+
+/*CSS for Sidebar*/
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #202020;
+    color: #818181;
+    font-weight:525;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.content {
+    flex: 1;
+    padding: 16px;
+}
+
+/* Toggle button style */
+.toggle-btn {
+    font-size: 18px;
+    background-color: #202020;
+    color: #818181;
+    font-weight:900;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+/* Style when button is hovered */
+.toggle-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebar.collapsed {
+        width: 100%;
+    }
+}
+
+.sidebar.collapsed {
+    width: 60px;
+    overflow: hidden;
+}
+
+.sidebar.collapsed ul {
+    display: none;
+}
+
+.sidebar.collapsed .toggle-btn {
+    text-align: center;
+}
+
+
+.profile {
+    padding-left: 900px;
+    font-style: italic;
+    font-size: 20px;
+    color: black;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Login </title>
+    <link rel="icon" href="/Picture-Software-Licenses/SecureLicense-minilogo.PNG">
+    <link rel="stylesheet" type="text/css" href="login-singup.css">
+    
+</head>
+
+<body>
+    <header>
+        <img src="/Picture-Software-Licenses/SecureLicense-logo.PNG" class="logo">
+    </header>
+
+    <div>
+        <img src="/Picture-Software-Licenses/female-avatar-profile-icon.jpg" class="login-picture"/> 
+    </div>
+
+    <div class="login-container" id="login-container">
+        <h2>Client Login</h2>
+
+       
+
+        <form action="connect.php" method="post">
+
+            <input id="username" class="login-input" type="text" name="uname" placeholder="Username" required="required" />
+
+            <input id="password" class="login-input" type="password" name="pword" placeholder="Password" required="required" />
+
+            <a class="login-button-link" href="/Client/mainPage.html">
+                <div class="login-button" onclick="validateLogin()">Login</div>
+            </a>
+
+            <div class="remember-me">
+                <input type="checkbox" checked="checked" name="remember">
+                <br/><br>
+                
+                <label for="remember">Remember me</label>
+            </div>
+
+            <a href="signupPage-Client.html" target="_blank" class="signup-link"> New? Sign up here! </a>
+        </form>
+    </div>
+
+    <script>
+        function validateLogin() {
+            const numberOfItems = localStorage.length;
+
+            // Iterate through each item
+            for (let i = 0; i < numberOfItems; i++) {
+                // Get the key at index i
+                const key = localStorage.key(i);
+
+                // Get the value associated with the key
+                const value = localStorage.getItem(key);
+                if (value === document.getElementById("username").value)
+                    alert("perfect");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

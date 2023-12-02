@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Sign Up </title>
+    <link rel="icon" href="/Picture-Software-Licenses/SecureLicense-minilogo.PNG">
+    <link rel="stylesheet" type="text/css" href="singupPage-Client.css">
+</head>
+
+<body>
+    <header>
+        <img src="/Picture-Software-Licenses/SecureLicense-logo.PNG" class="logo">
+    </header>
+
+    <div>
+        <img src="/Picture-Software-Licenses/female-avatar-profile-icon.jpg" class="login-picture"/> 
+    </div>
+
+    <div class="login-container">
+        <h2>Client Sign Up</h2>
+
+       
+
+        <form method="post" action="connect.php">
+
+            <input class="login-input" type="text" name="email" placeholder="E-mail address" required="required" />
+
+            <input class="login-input" type="text" name="fname" placeholder="First Name" required="required" />
+
+            <input class="login-input" type="text" name="lname" placeholder="Last Name" required="required" />
+
+            <input id="username" class="login-input" type="text" name="uname" placeholder="Username" required="required" />
+
+            <input id="password" class="login-input" type="password" name="pword" placeholder="Password" required="required" />
+
+            <input type="submit">
+
+            <a href="/Client/mainPage.html">
+                <div class="login-button" onclick="storeData()">
+                    Sign Up
+                </div>
+            </a>
+
+  
+        </form>
+    </div>
+
+    
+</body>
+
+</html>

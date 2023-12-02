@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associate Serial Number</title>
+    <link rel="icon" href="/Picture-Software-Licenses/SecureLicense-minilogo.PNG">
+    <link rel="stylesheet" type="text/css" href="associateSerialNumber.css">
+    <link rel="stylesheet" type="text/css" href="/Client/Common_Styles.css">
+    <script src="/Client/toolbar.js"></script>
+</head>
+<body>
+
+    <!--Toolbar Menu-->
+    <div class="container">
+        <div class="sidebar">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu </button>
+            <ul>
+                <li><a href="providerHome.html">Home</a></li>
+                <li><a href="manageClients.html">Manage clients</a></li>
+                <li><a href="generateSerialNumber.html">Generate serial numbers</a></li>
+                <li><a href="associateSerialNumbers.html">Associate serial numbers</a></li>
+                <li><a href="contactClients.html">Notify all clients</a></li>
+                <li><a href="manageSerialNumbers.html">Enable/Disable serial numbers</a> </li>
+            </ul>
+        </div>
+    <!--Toolbar Menu-->
+
+        <div class="content">
+            <header>
+                <img src="/Picture-Software-Licenses/SecureLicense-logo.PNG" class="logo">
+            </header>
+            <div class="home-div">
+                <p><pre class="home">Home   /   Software Licences </pre></p>
+                
+                <p class="licenses-p"> Associate Serial Numbers:</p>
+            </div>
+        
+            <fieldset class="generate">
+
+                <label for="lastName">Client ID:</label>
+                <br/>
+                <input type="number" id="clientid" name="clientid">
+
+                <label for="lastName">Serial Number to associate:</label>
+                <br/>
+                <input type="number" id="associatednumber" name="associatednumber">
+             
+
+                <br/>
+                <input type="submit" value="Associate">
+                <br/><br/>
+
+            </fieldset>
+                   
+        </div>
+    </div>
+</body>
+</html>

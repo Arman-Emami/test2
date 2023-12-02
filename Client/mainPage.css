@@ -1,0 +1,20 @@
+
+
+
+.list-of-licenses {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.license {
+    background-color: white;
+    height: 140px;
+    padding-left: 30px;
+    padding-top: 10px;
+    border-color: lightseagreen;
+    border-style: solid;
+}
+
+.footer {
+    margin-bottom: 100px;
+}

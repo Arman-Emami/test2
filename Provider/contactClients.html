@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact clients </title>
+    <link rel="icon" href="/Picture-Software-Licenses/SecureLicense-minilogo.PNG">
+    <link rel="stylesheet" type="text/css" href="contactClients.css">
+    <link rel="stylesheet" type="text/css" href="/Client/Common_Styles.css">
+    <script src="/Client/toolbar.js"></script>
+</head>
+<body>
+
+    <!--Toolbar Menu-->
+    <div class="container">
+        <div class="sidebar">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu </button>
+            <ul>
+                <li><a href="providerHome.html">Home</a></li>
+                <li><a href="manageClients.html">Manage clients</a></li>
+                <li><a href="generateSerialNumber.html">Generate serial numbers</a></li>
+                <li><a href="associateSerialNumbers.html">Associate serial numbers</a></li>
+                <li><a href="contactClients.html">Notify all clients</a></li>
+                <li><a href="manageSerialNumbers.html">Enable/Disable serial numbers</a> </li>
+            </ul>
+        </div>
+    <!--Toolbar Menu-->
+
+        <div class="content">
+            <header>
+                <img src="/Picture-Software-Licenses/SecureLicense-logo.PNG" class="logo">
+            </header>
+            <div class="home-div">
+                <p><pre class="home">Home   /   Software Licences </pre></p>
+                
+                <p class="licenses-p"> Contact All Clients:</p>
+            </div>
+        
+            <form action="/action_page.php">
+                <p><label>Notify clients of:</label></p>
+                <textarea rows="25" cols="150" placeholder="Write e-mail here..."></textarea>
+                <br>
+                <input type="submit" value="Submit">
+
+                <p><b>Warning!</b>This message will be sent to all clients with an ongoing subscription.</p>
+
+              </form>
+        
+            <div class="list-of-actions"> 
+        
+            </div>        
+        </div>
+    </div>
+</body>
+</html>

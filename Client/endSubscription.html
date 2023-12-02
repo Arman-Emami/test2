@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End Subscription</title>
+    <link rel="icon" href="/Picture-Software-Licenses/SecureLicense-minilogo.PNG">
+    <link rel="stylesheet" type="text/css" href="endSubscription.css">
+    <link rel="stylesheet" type="text/css" href="Common_Styles.css">
+    <script src="toolbar.js"></script>
+</head>
+<body>
+
+    <!--Toolbar Menu-->
+    <div class="container">
+        <div class="sidebar">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu </button>
+            <ul>
+                <li><a href="mainPage.html">Home</a></li>
+                <li><a href="accountManagement.html">My Account</a></li>
+                <li><a href="myLicenses.html">My Licenses</a></li>
+                <li><a href="renewLicense.html">License Renewal</a></li>
+                <li><a href="endSubscription.html">End a Subscription</a></li>
+                <li><a href="deleteAccount.html">Delete Account</a> </li>
+                <li><a href="/Login-SignUp/landingPage.html">Log Out</a> </li>
+            </ul>
+        </div>
+    <!--Toolbar Menu--> 
+
+        <div class="content">
+            <header>
+                <img src="/Picture-Software-Licenses/SecureLicense-logo.PNG" class="logo">
+            </header>
+            <div class="home-div">
+                <p><pre class="home">Home   /   Software Licences </pre></p>
+                
+                <p class="licenses-p"> End Subscription:</p>
+            </div>
+        
+            <div class="login-container">
+                <h4> Enter License Informations to End Subscription</h4>
+        
+               
+        
+                <form method="post">
+                    <div>
+
+                        <input class="login-input" type="number" name="uname" placeholder="Seial Number" required="required" />
+
+                        <input class="login-input" type="text" name="uname" placeholder="Username" required="required" />
+            
+                        <input class="login-input" type="password" name="pword" placeholder="Account Password" required="required" />
+            
+                        <button class="login-button" onclick="window.location.href = 'mainPage.html'">End Subscription</button>
+            
+                    </div>
+        
+                    <br/>
+        
+                </form>
+            </div>
+                   
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account</title>
+    <link rel="icon" href="/Picture-Software-Licenses/SecureLicense-minilogo.PNG">
+    <link rel="stylesheet" type="text/css" href="renewLicense.css">
+    <link rel="stylesheet" type="text/css" href="Common_Styles.css">
+    <script src="toolbar.js"></script>
+</head>
+<body>
+
+    <!--Toolbar Menu-->
+    <div class="container">
+        <div class="sidebar">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu </button>
+            <ul>
+                <li><a href="mainPage.html">Home</a></li>
+                <li><a href="accountManagement.html">My Account</a></li>
+                <li><a href="myLicenses.html">My Licenses</a></li>
+                <li><a href="renewLicense.html">License Renewal</a></li>
+                <li><a href="endSubscription.html">End a Subscription</a></li>
+                <li><a href="deleteAccount.html">Delete Account</a> </li>
+                <li><a href="/Login-SignUp/landingPage.html">Log Out</a> </li>
+            </ul>
+        </div>
+    <!--Toolbar Menu--> 
+
+
+    <div class="content">
+            <header>
+                <img src="/Picture-Software-Licenses/SecureLicense-logo.PNG" class="logo">
+            </header>
+            <div class="home-div">
+                <p><pre class="home">Home   /   Software Licences </pre></p>
+                
+                <p class="licenses-p"> License Renewal:</p>
+            </div>
+        
+            <fieldset class="renew">
+                
+                <label for="firstName">Serial Number of the License You Want to Renew:</label>
+                <br/>
+                <input type="text" id="firstName" name="firstName">
+    
+                <label for="lastName">Username</label>
+                <br/>
+                <input type="text" id="lastName" name="lastName">
+    
+                <label for="lastName">Account Password</label>
+                <br/>
+                <input type="number" id="lastName" name="lastName">
+
+                <label for="birthday">Till When Would You Like to Renew Your License?</label>
+                <br/>
+                <input type="date" id="birthday" name="birthday">
+            </fieldset>
+            
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="contact-us">
+                        <h2>Contact Us</h2>
+                        <p><strong>Phone:</strong> (514) 999-3333</p>
+                        <p><strong>Email:</strong> <a href="mailto:support@SecureLicense.com">support@SecureLicense.com</a></p>
+                    </div>
+                </div>
+            </footer>        
+        </div>
+    </div>
+</body>
+</html>

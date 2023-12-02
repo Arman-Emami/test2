@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Serial Numbers</title>
+    <link rel="icon" href="/Picture-Software-Licenses/SecureLicense-minilogo.PNG">
+    <link rel="stylesheet" type="text/css" href="manageSerialNumbers.css">
+    <link rel="stylesheet" type="text/css" href="/Client/Common_Styles.css">
+    <script src="/Client/toolbar.js"></script>
+    
+</head>
+
+<body>
+
+    <!--Toolbar Menu-->
+    <div class="container">
+        <div class="sidebar">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu </button>
+            <ul>
+                <li><a href="providerHome.html">Home</a></li>
+                <li><a href="manageClients.html">Manage clients</a></li>
+                <li><a href="generateSerialNumber.html">Generate serial numbers</a></li>
+                <li><a href="associateSerialNumbers.html">Associate serial numbers</a></li>
+                <li><a href="contactClients.html">Notify all clients</a></li>
+                <li><a href="manageSerialNumbers.html">Enable/Disable serial numbers</a> </li>
+            </ul>
+        </div>
+    <!--Toolbar Menu-->
+
+        <div class="content">
+            <header>
+                <img src="/Picture-Software-Licenses/SecureLicense-logo.PNG" class="logo">
+            </header>
+            <div class="home-div">
+                <p>
+                <pre class="home">Home   /   Software Licences </pre>
+                </p>
+
+                <p class="licenses-p"> Manage Serial Numbers:</p>
+            </div>
+
+            <fieldset class="renew">
+
+                <label for="firstName">Serial Number of the License You Want to Manage:</label>
+                <br />
+                <input type="text" id="firstName" name="firstName">
+
+                <input type="radio" id="enable" name="enable-disable_status" value="enable">
+
+                <label for="enable">Enable (Unblock)</label><br>
+
+                <input type="radio" id="disable" name="enable-disable_status" value="disable">
+
+                <label for="disable">Disable (Block)</label><br><br>
+
+                <label for="birthday">Until When Would You Like to Enable/Disable Your License?</label>
+                <br />
+                <input type="date" id="birthday" name="birthday">
+            </fieldset>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
